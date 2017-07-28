@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.i_leidian.bbstest">
-    <uses-permission android:name="xmpp.permission.SEND_NOTIFICATION"/>
-    <permission android:protectionLevel="normal" android:name="xmpp.permission.SEND_NOTIFICATION"/>
+
+    <uses-permission android:name="xmpp.permission.SEND_NOTIFICATION" />
+    <uses-permission android:name="bbsqiku.permission.ACCESS_KUPAI_CONTENT"/>
+    <uses-permission android:name="qiku.permission.ACCESS_COOLSHOWWEB"/>
+    <uses-permission android:name="qikuShowProvider.permission.FILE_WRITE"/>
+    <uses-permission android:name="bbsqiku.permission.ACCESS_KUPAI_CONTENT"/>
+    <!--<permission android:name="bbsqiku.permission.ACCESS_KUPAI_CONTENT"
+        android:protectionLevel="normal"/>
+    <permission
+        android:name="xmpp.permission.SEND_NOTIFICATION"
+            android:protectionLevel="normal" />
+
+
+    <permission android:protectionLevel="signature" android:name="qikuShowProvider.permission.FILE_WRITE"/>-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
